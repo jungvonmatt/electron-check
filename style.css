@@ -1,0 +1,48 @@
+body {
+  background-color: rgb(15, 35, 25);
+  font-family: Helvetica, Sans-Serif;
+  color: #fff;
+}
+.logo {
+  color: rgb(255, 255, 255);
+  width: 60px;
+  height: auto;
+  opacity: 1;
+  display: block;
+  position: absolute;
+  right: 25px;
+  top: 25px;
+}
+.visually-hidden {
+  display: none;
+}
+.logo svg {
+  color: rgb(255, 255, 255);
+}
+
+.message {
+  border: 1px solid;
+  margin: 10px 0px;
+  padding: 15px 10px 15px 50px;
+  background-repeat: no-repeat;
+  background-position: 10px center;
+  color: #9f6000;
+  background-color: #feefb3;
+  position: absolute;
+  bottom: 25px;
+  width: 500px;
+}
+
+video {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -100;
+  transform: translateX(-50%) translateY(-50%);
+  background-size: cover;
+  transition: 1s opacity;
+}

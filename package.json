@@ -1,0 +1,30 @@
+{
+  "name": "BSHApp",
+  "version": "1.0.0",
+  "description": "A minimal Electron application",
+  "main": "main.js",
+  "build": {
+    "appId": "com.jvm.app",
+    "productName": "BSH VLP 2021",
+    "publisherName": "Jung von Matt TECH"
+  },
+  "scripts": {
+    "start": "electron .",
+    "packager-win": "electron-packager ./ --platform=win32 --arch=ia32 --prune --overwrite",
+    "packager-mac": "electron-packager ./ --platform=mas --prune --overwrite"
+  },
+  "repository": "https://github.com/electron/electron-quick-start",
+  "keywords": [
+    "Electron",
+    "demo"
+  ],
+  "author": "Jung von Matt",
+  "license": "All rights reserved JvM 2021",
+  "devDependencies": {
+    "electron": "^13.0.1"
+  },
+  "dependencies": {
+    "electron-packager": "^15.2.0",
+    "ffmpeg-static": "^4.3.0"
+  }
+}

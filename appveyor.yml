@@ -1,0 +1,18 @@
+platform:
+  - x86
+
+cache:
+  - "%LOCALAPPDATA%\\Yarn"
+  - node_modules -> package.json
+  - node_modules -> package-lock.json
+
+install:
+  - ps: Install-Product node 14 x86
+  - npm install
+  - set PATH=%APPDATA%\npm;%PATH%
+  - npm install
+
+build_script:
+  - npm run packager-win
+
+test: off
