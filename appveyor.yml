@@ -15,4 +15,8 @@ install:
 build_script:
   - npm run packager-win
 
+artifacts:
+  - path: BSHApp-win32-ia32
+    name: BSHApp-win32-ia32
+
 test: off
