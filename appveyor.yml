@@ -13,6 +13,7 @@ install:
   - npm install
 
 build_script:
+  - npm run create-data
   - npm run packager-win
 
 artifacts:
